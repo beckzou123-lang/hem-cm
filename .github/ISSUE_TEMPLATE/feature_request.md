@@ -6,7 +6,7 @@ labels: enhancement
 assignees: ""
 ---
 
-## Problem
+## Workflow or problem
 
 What problem are you trying to solve?
 
@@ -14,9 +14,26 @@ What problem are you trying to solve?
 
 Describe your idea.
 
+## Who benefits
+
+Which users or contributors benefit from this?
+
+## Product or model area
+
+- Source adapters
+- Event models
+- Scenario paths
+- Replay and validation
+- UI and workflow
+- Docs and onboarding
+
 ## Why it matters
 
-Explain the expected value for users or contributors.
+Explain the expected value and what becomes easier, faster, or clearer.
+
+## Success signal
+
+How would we know this feature is working well?
 
 ## Additional context
 

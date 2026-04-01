@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/beckzou123-lang/hem-cm/discussions
+    about: Use Discussions for open-ended ideas, workflow feedback, and community Q&A.
+  - name: Code of Conduct
+    url: https://github.com/beckzou123-lang/hem-cm/blob/main/CODE_OF_CONDUCT.md
+    about: Please review the community expectations before participating.

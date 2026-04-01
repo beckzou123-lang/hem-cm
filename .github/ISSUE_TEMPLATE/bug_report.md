@@ -8,7 +8,7 @@ assignees: ""
 
 ## Summary
 
-Describe the issue clearly.
+Describe the bug in one or two sentences.
 
 ## Steps to reproduce
 
@@ -24,12 +24,26 @@ What should happen?
 
 What happened instead?
 
+## Scope
+
+- Affected page or workflow:
+- Affected event family or model surface:
+- Reproducible with seeded demo data: yes / no
+- Related event id, signal id, or source URL:
+
 ## Environment
 
 - OS:
 - Browser:
 - Node.js version:
+- App mode: local dev / production build
+
+## Verification notes
+
+- Does `npm run build` still pass?
+- Does `npm run validate` still pass, if applicable?
+- Any console or server logs:
 
 ## Additional context
 
-Add screenshots, logs, or notes here.
+Add screenshots, recordings, logs, or notes here.
