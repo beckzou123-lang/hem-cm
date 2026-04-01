@@ -48,6 +48,32 @@ Most market dashboards stop at aggregation. HEM-CM goes further:
 - `/models` Model Center: parent model, sub-models, thresholds, variables, versions, source rules
 - `/settings` Settings: language, theme, refresh cadence, demo mode, export format, market preference
 
+## Screenshots
+
+### Global Overview
+
+Hot events, family risk heatmap, and the cross-market signal surface in one command center.
+
+![Global Overview](./assets/screenshots/01-dashboard.png)
+
+### Event War Room
+
+Inspect causal chains, scenario paths, actor responses, and event-specific market transmission.
+
+![Event War Room](./assets/screenshots/02-event-war-room.png)
+
+### Market Desk
+
+Translate one event into ranked winners, losers, priced-in moves, and risk-off transmission.
+
+![Market Desk](./assets/screenshots/03-markets.png)
+
+### Backtest Lab
+
+Replay model decisions against realized outcomes and inspect fit scores, error sources, and version deltas.
+
+![Backtest Lab](./assets/screenshots/04-backtests.png)
+
 ## Model Design
 
 ### 1. Parent causal model
@@ -223,6 +249,12 @@ HEM.CM_System/
 - stronger replay evaluation metrics
 - collaboration and annotation workflows
 - optional AI copilot modules for evidence explanation
+
+## GitHub Launch Notes
+
+- Repository pitch: open-source event intelligence terminal for causal analysis, scenario forecasting, and market mapping
+- Best GitHub topics: `event-intelligence`, `capital-markets`, `causal-engine`, `scenario-analysis`, `market-mapping`, `nextjs`, `typescript`, `prisma`, `sqlite`, `open-source`
+- Maintainer helper: see [docs/GITHUB_ABOUT.md](./docs/GITHUB_ABOUT.md) for About text, topics, and showcase copy
 
 ## Notes
 

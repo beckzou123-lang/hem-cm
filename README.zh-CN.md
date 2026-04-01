@@ -116,6 +116,32 @@ HEM-CM 当前并不是依赖外部大模型的黑盒演示。
 - `/models` 模型管理：母模型、子模型、阈值、变量、版本、信源规则
 - `/settings` 设置页：语言、主题、刷新频率、演示模式、导出格式
 
+## 截图预览
+
+### 全局态势台
+
+在一个总控视图中查看热点事件、事件家族热力图与跨市场信号面。
+
+![全局态势台](./assets/screenshots/01-dashboard.png)
+
+### 事件作战室
+
+查看因果链、路径推演、参与者响应和事件级市场传导。
+
+![事件作战室](./assets/screenshots/02-event-war-room.png)
+
+### 资本市场作战台
+
+把同一事件快速拆解成受益、受损、已定价程度与风险偏好传导。
+
+![资本市场作战台](./assets/screenshots/03-markets.png)
+
+### 回测实验室
+
+把模型预测与真实结果放在同一视图内，对比拟合分、误差来源与版本差异。
+
+![回测实验室](./assets/screenshots/04-backtests.png)
+
 ## 技术栈
 
 - Next.js 15
@@ -200,6 +226,12 @@ npm run validate
 - 更细粒度的回测评价指标
 - 协作标注与研究工作流
 - AI 辅助解释模块
+
+## GitHub 展示备注
+
+- 仓库一句话定位：面向资本市场的开源事件智能终端，强调因果分析、路径预测与市场映射
+- 推荐 Topics：`event-intelligence`、`capital-markets`、`causal-engine`、`scenario-analysis`、`market-mapping`、`nextjs`、`typescript`、`prisma`、`sqlite`、`open-source`
+- 维护者文案参考：见 [docs/GITHUB_ABOUT.md](./docs/GITHUB_ABOUT.md)
 
 ## 备注
 
