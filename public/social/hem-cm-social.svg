@@ -32,30 +32,32 @@
 
   <g opacity="0.92">
     <rect x="74" y="72" width="1132" height="496" rx="30" fill="#0B1220" fill-opacity="0.45" stroke="url(#cardStroke)"/>
-    <rect x="104" y="102" width="642" height="250" rx="24" fill="#09111F" fill-opacity="0.86" stroke="url(#cardStroke)"/>
-    <rect x="772" y="102" width="404" height="206" rx="24" fill="#09111F" fill-opacity="0.86" stroke="url(#cardStroke)"/>
-    <rect x="772" y="330" width="404" height="206" rx="24" fill="#09111F" fill-opacity="0.86" stroke="url(#cardStroke)"/>
-    <rect x="104" y="380" width="642" height="156" rx="24" fill="#09111F" fill-opacity="0.86" stroke="url(#cardStroke)"/>
+    <rect x="104" y="102" width="676" height="250" rx="24" fill="#09111F" fill-opacity="0.86" stroke="url(#cardStroke)"/>
+    <rect x="804" y="102" width="372" height="206" rx="24" fill="#09111F" fill-opacity="0.86" stroke="url(#cardStroke)"/>
+    <rect x="804" y="330" width="372" height="206" rx="24" fill="#09111F" fill-opacity="0.86" stroke="url(#cardStroke)"/>
+    <rect x="104" y="380" width="676" height="156" rx="24" fill="#09111F" fill-opacity="0.86" stroke="url(#cardStroke)"/>
   </g>
 
   <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" fill="#E2E8F0">
     <text x="118" y="132" font-size="20" letter-spacing="4" opacity="0.72">HEM-CM · OPEN SOURCE</text>
-    <text x="118" y="204" font-size="66" font-weight="700">Breaking News → Scenarios → Market Impact</text>
-    <text x="118" y="254" font-size="30" opacity="0.9">Explainable event intelligence terminal for capital markets</text>
-    <text x="118" y="312" font-size="22" opacity="0.78">Causal chains · Multi-horizon paths · Cross-market mapping · Replay labs</text>
+    <text x="118" y="184" font-size="58" font-weight="700">Event Intelligence</text>
+    <text x="118" y="248" font-size="58" font-weight="700">for Capital Markets</text>
+    <text x="118" y="306" font-size="22" opacity="0.9">Turn breaking news into explainable scenarios and market impact.</text>
+    <text x="118" y="338" font-size="18" opacity="0.78">Causal chains · Multi-horizon paths · Cross-market mapping · Replay labs</text>
 
     <text x="118" y="420" font-size="20" opacity="0.64">WHAT IT SHIPS</text>
-    <text x="118" y="462" font-size="28">Global Overview · Event War Room · Market Desk · Backtest Lab</text>
-    <text x="118" y="504" font-size="20" opacity="0.78">Local-first workflow from source intake to validation</text>
+    <text x="118" y="462" font-size="22">Global Overview · Event War Room</text>
+    <text x="118" y="496" font-size="22">Market Desk · Backtest Lab</text>
+    <text x="118" y="526" font-size="18" opacity="0.78">Local-first workflow from source intake to validation</text>
 
-    <text x="798" y="142" font-size="18" opacity="0.64">EVENT PIPELINE</text>
-    <text x="798" y="190" font-size="26">Signal Intake</text>
-    <text x="798" y="226" font-size="26">Stage Detection</text>
-    <text x="798" y="262" font-size="26">Scenario Paths</text>
+    <text x="828" y="142" font-size="18" opacity="0.64">EVENT PIPELINE</text>
+    <text x="828" y="192" font-size="28">Signal Intake</text>
+    <text x="828" y="230" font-size="28">Stage Detection</text>
+    <text x="828" y="268" font-size="28">Scenario Paths</text>
 
-    <text x="798" y="370" font-size="18" opacity="0.64">MARKET OUTPUT</text>
-    <text x="798" y="418" font-size="26">A-Shares · US Equities</text>
-    <text x="798" y="454" font-size="26">Commodities · Risk Appetite</text>
-    <text x="798" y="490" font-size="18" opacity="0.78">Next.js · TypeScript · Prisma · SQLite</text>
+    <text x="828" y="370" font-size="18" opacity="0.64">MARKET OUTPUT</text>
+    <text x="828" y="418" font-size="24">A-Shares · US Equities</text>
+    <text x="828" y="454" font-size="24">Commodities · Risk Appetite</text>
+    <text x="828" y="490" font-size="18" opacity="0.78">Next.js · TypeScript · Prisma · SQLite</text>
   </g>
 </svg>
