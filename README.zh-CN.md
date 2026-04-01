@@ -9,7 +9,7 @@
 - 一键演示：`./scripts/dev.sh`
 - 快速启动：`npm install` → `npm run dev`
 - 直达截图： [全局态势台](#全局态势台) · [事件作战室](#事件作战室) · [资本市场作战台](#资本市场作战台) · [回测实验室](#回测实验室)
-- 项目资料： [English README](./README.md) · [项目亮点](./docs/PROJECT_HIGHLIGHTS.zh-CN.md) · [GitHub 文案包](./docs/GITHUB_ABOUT.zh-CN.md)
+- 项目资料： [English README](./README.md) · [项目亮点](./docs/PROJECT_HIGHLIGHTS.zh-CN.md) · [首发 Release 文案](./docs/RELEASE_v1.0.0.md) · [宣传文案包](./docs/LAUNCH_KIT.md) · [GitHub 文案包](./docs/GITHUB_ABOUT.zh-CN.md)
 
 ## 你能获得什么
 

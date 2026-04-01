@@ -13,7 +13,7 @@ Turn breaking news into explainable causal chains, scenario paths, cross-market 
 - One-command demo: `./scripts/dev.sh`
 - Quick start: `npm install` → `npm run dev`
 - Jump to screenshots: [Global Overview](#global-overview) · [Event War Room](#event-war-room) · [Market Desk](#market-desk) · [Backtest Lab](#backtest-lab)
-- Project docs: [中文说明](./README.zh-CN.md) · [Highlights](./docs/PROJECT_HIGHLIGHTS.md) · [GitHub About Kit](./docs/GITHUB_ABOUT.md)
+- Project docs: [中文说明](./README.zh-CN.md) · [Highlights](./docs/PROJECT_HIGHLIGHTS.md) · [Release Notes](./docs/RELEASE_v1.0.0.md) · [Launch Kit](./docs/LAUNCH_KIT.md) · [GitHub About Kit](./docs/GITHUB_ABOUT.md)
 
 ## What You Get
 

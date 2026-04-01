@@ -1,0 +1,27 @@
+changelog:
+  categories:
+    - title: Highlights
+      labels:
+        - release:highlight
+        - feature
+    - title: Product Surface
+      labels:
+        - release:surface
+        - ui
+    - title: Model & Engine
+      labels:
+        - release:model
+        - engine
+    - title: Documentation
+      labels:
+        - documentation
+        - docs
+    - title: Fixes
+      labels:
+        - bug
+        - fix
+  exclude:
+    labels:
+      - skip-changelog
+    authors:
+      - dependabot
