@@ -1,0 +1,66 @@
+{
+  "name": "hem-cm-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HEM-CM is an open-source event intelligence terminal for causal analysis, scenario forecasting, and capital market mapping.",
+  "license": "MIT",
+  "homepage": "https://github.com/beckzou123-lang/hem-cm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beckzou123-lang/hem-cm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/beckzou123-lang/hem-cm/issues"
+  },
+  "keywords": [
+    "event-intelligence",
+    "capital-markets",
+    "scenario-analysis",
+    "causal-engine",
+    "nextjs",
+    "typescript",
+    "open-source"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "seed": "node --env-file=.env --import tsx prisma/seed.ts",
+    "db:init": "sqlite3 prisma/dev.db < prisma/init.sql",
+    "db:push": "prisma db push",
+    "db:generate": "prisma generate",
+    "validate": "node --env-file=.env --import tsx tests/run-validations.ts",
+    "refresh": "node --env-file=.env --import tsx scripts/refresh-demo.ts",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.1",
+    "@prisma/client": "^6.11.1",
+    "@radix-ui/react-slot": "^1.1.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.541.0",
+    "next": "^15.5.3",
+    "next-themes": "^0.4.6",
+    "node-cron": "^4.2.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.62.0",
+    "recharts": "^3.1.2",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^4.1.5",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.11",
+    "@types/react-dom": "^19.1.7",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "prisma": "^6.11.1",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

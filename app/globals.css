@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 192 33% 98%;
+  --foreground: 216 36% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 216 36% 12%;
+  --muted: 200 22% 94%;
+  --muted-foreground: 215 18% 44%;
+  --border: 201 18% 85%;
+  --accent: 191 72% 43%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 191 72% 43%;
+  --primary: 191 82% 33%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 216 28% 18%;
+  --secondary-foreground: 0 0% 100%;
+  --danger: 6 78% 56%;
+  --danger-foreground: 0 0% 100%;
+  --success: 148 66% 34%;
+  --success-foreground: 0 0% 100%;
+  --warning: 36 90% 52%;
+  --warning-foreground: 0 0% 100%;
+}
+
+.dark {
+  --background: 220 22% 8%;
+  --foreground: 200 22% 96%;
+  --card: 218 24% 12%;
+  --card-foreground: 200 22% 96%;
+  --muted: 219 20% 16%;
+  --muted-foreground: 214 14% 68%;
+  --border: 218 20% 22%;
+  --accent: 189 78% 47%;
+  --accent-foreground: 220 25% 8%;
+  --ring: 189 78% 47%;
+  --primary: 188 76% 51%;
+  --primary-foreground: 220 25% 8%;
+  --secondary: 215 18% 86%;
+  --secondary-foreground: 220 25% 8%;
+  --danger: 6 72% 58%;
+  --danger-foreground: 0 0% 100%;
+  --success: 149 61% 47%;
+  --success-foreground: 0 0% 100%;
+  --warning: 38 92% 57%;
+  --warning-foreground: 220 25% 8%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(15, 118, 110, 0.18), transparent 28%),
+    radial-gradient(circle at left bottom, rgba(30, 64, 175, 0.12), transparent 30%),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family:
+    "SF Pro Display",
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Segoe UI",
+    sans-serif;
+}
+
+::selection {
+  background: rgba(13, 148, 136, 0.2);
+}
+
+.panel-surface {
+  background: color-mix(in srgb, hsl(var(--card)) 84%, transparent);
+  backdrop-filter: blur(18px);
+}
+
+.metric-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.text-balance {
+  text-wrap: balance;
+}

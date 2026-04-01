@@ -1,0 +1,300 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum FamilyType {
+  GEO_WAR
+  TRADE_POLICY
+  REGULATION_LAW
+  CORPORATE_INDUSTRY
+  SOCIAL_LABOR
+  TECH_PLATFORM
+}
+
+enum EventStage {
+  LATENT
+  HEATING
+  TRIGGER
+  DIFFUSION
+  CONFRONTATION
+  NEGOTIATION
+  REALIZATION
+  DECAY
+}
+
+enum EventStatus {
+  ACTIVE
+  WATCH
+  ARCHIVED
+}
+
+enum SignalType {
+  NEWS
+  OFFICIAL
+  SPEECH
+  ANOMALY
+  MARKET
+  PHYSICAL
+}
+
+enum SourceType {
+  MEDIA
+  GOVERNMENT
+  EXCHANGE
+  CORPORATE
+  SELL_SIDE
+  ALT_DATA
+}
+
+enum SourceGrade {
+  S
+  A
+  B
+  C
+}
+
+enum Horizon {
+  D7
+  D30
+  D90
+  D180
+  D365
+}
+
+enum MarketCode {
+  CN_SOCIETY
+  A_SHARE
+  US_EQUITY
+  COMMODITY
+  MACRO
+}
+
+enum AssetClass {
+  SECTOR
+  STYLE
+  COMMODITY
+  RATE_FX
+  SENTIMENT
+}
+
+enum ImpactDirection {
+  POSITIVE
+  NEGATIVE
+  NEUTRAL
+}
+
+enum ThemeMode {
+  LIGHT
+  DARK
+  SYSTEM
+}
+
+model EventCluster {
+  id               String     @id
+  title            String
+  familyType       FamilyType
+  summary          String
+  confidenceScore  Float
+  severityScore    Float
+  tags             Json
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+  events           Event[]
+}
+
+model Event {
+  id                 String        @id
+  clusterId          String?
+  title              String
+  familyType         FamilyType
+  subType            String
+  currentStage       EventStage
+  severityScore      Float
+  confidenceScore    Float
+  summary            String
+  regions            Json
+  tags               Json
+  startTime          DateTime
+  latestUpdateTime   DateTime
+  sourceCount        Int
+  status             EventStatus
+  stageExplanation   String
+  actorNames         Json
+  driverSummary      Json
+  constraintSummary  Json
+  triggerSummary     Json
+  causalChain        Json
+  motherModel        Json
+  marketTransmission Json
+  explanation        Json
+  cluster            EventCluster?      @relation(fields: [clusterId], references: [id], onDelete: SetNull)
+  actors             Actor[]
+  signals            Signal[]
+  predictions        PathPrediction[]
+  marketImpacts      MarketImpact[]
+  sectorImpacts      SectorImpact[]
+  backtestRuns       BacktestRun[]
+  alertRules         AlertRule[]
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+}
+
+model Actor {
+  id            String   @id
+  eventId       String
+  name          String
+  actorType     String
+  region        String
+  role          String
+  objective     String
+  leverageScore Float
+  stance        String
+  description   String
+  event         Event    @relation(fields: [eventId], references: [id], onDelete: Cascade)
+}
+
+model Signal {
+  id               String      @id
+  eventId          String
+  signalType       SignalType
+  sourceType       SourceType
+  sourceGrade      SourceGrade
+  confidenceScore  Float
+  publishTime      DateTime
+  decayWeight      Float
+  validatedFlag    Boolean
+  rawPayload       Json
+  headline         String
+  summary          String
+  sourceName       String
+  mergedKey        String
+  entersModel      Boolean
+  priorityScore    Float
+  event            Event       @relation(fields: [eventId], references: [id], onDelete: Cascade)
+}
+
+model PathPrediction {
+  id                   String    @id
+  eventId              String
+  horizon              Horizon
+  pathName             String
+  probability          Float
+  keyDrivers           Json
+  keyConstraints       Json
+  invalidationSignals  Json
+  expectedMarketEffect String
+  explanation          String
+  conditions           Json
+  pathRank             Int
+  event                Event     @relation(fields: [eventId], references: [id], onDelete: Cascade)
+}
+
+model MarketImpact {
+  id             String          @id
+  eventId        String
+  market         MarketCode
+  assetClass     AssetClass
+  sectorName     String
+  direction      ImpactDirection
+  strengthScore  Float
+  pricedInScore  Float
+  crowdingScore  Float
+  phaseTag       String
+  summary        String
+  explanation    String
+  orderRank      Int
+  event          Event           @relation(fields: [eventId], references: [id], onDelete: Cascade)
+}
+
+model SectorImpact {
+  id               String          @id
+  eventId          String
+  market           MarketCode
+  sectorName       String
+  direction        ImpactDirection
+  score            Float
+  confidenceScore  Float
+  explanation      String
+  benchmarkImpact  Float
+  event            Event           @relation(fields: [eventId], references: [id], onDelete: Cascade)
+}
+
+model BacktestRun {
+  id                 String    @id
+  eventId            String
+  modelVersion       String
+  replayWindow       String
+  timeline           Json
+  predictionSnapshot Json
+  actualOutcome      Json
+  marketOutcome      Json
+  predictionHitRate  Float
+  marketFitScore     Float
+  errorAnalysis      Json
+  summary            String
+  event              Event     @relation(fields: [eventId], references: [id], onDelete: Cascade)
+}
+
+model ModelConfig {
+  id               String      @id
+  familyType       FamilyType?
+  version          String
+  title            String
+  description      String
+  weights          Json
+  variables        Json
+  mappingMatrix    Json
+  pathTemplates    Json
+  sourceRules      Json
+  thresholds       Json
+  visualFocus      Json
+  active           Boolean     @default(false)
+  createdAt        DateTime    @default(now())
+  updatedAt        DateTime    @updatedAt
+}
+
+model SourceConfig {
+  id            String      @id
+  sourceName    String
+  sourceType    SourceType
+  sourceGrade   SourceGrade
+  enabled       Boolean
+  refreshCron   String
+  latencyHint   String
+  weight        Float
+  ruleConfig    Json
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
+
+model AlertRule {
+  id          String   @id
+  eventId     String?
+  name        String
+  scope       String
+  condition   Json
+  enabled     Boolean
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  event       Event?   @relation(fields: [eventId], references: [id], onDelete: SetNull)
+}
+
+model UserPreference {
+  id               String    @id
+  key              String    @unique
+  language         String
+  theme            ThemeMode
+  refreshMinutes   Int
+  preferredMarkets Json
+  demoMode         Boolean
+  savedFilters     Json
+  exportFormat     String
+  value            Json
+  updatedAt        DateTime  @updatedAt
+  createdAt        DateTime  @default(now())
+}
