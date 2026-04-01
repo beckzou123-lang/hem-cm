@@ -4,9 +4,23 @@
 [![CI](https://github.com/beckzou123-lang/hem-cm/actions/workflows/ci.yml/badge.svg)](https://github.com/beckzou123-lang/hem-cm/actions/workflows/ci.yml)
 [![Issues](https://img.shields.io/github/issues/beckzou123-lang/hem-cm)](https://github.com/beckzou123-lang/hem-cm/issues)
 
-HEM-CM, short for Human Event Matrix for Capital Markets, is an open-source event intelligence terminal that turns breaking news into causal chains, scenario forecasts, market impact maps, and replayable research workflows.
+Open-source event intelligence terminal for capital markets.
 
-[中文说明](./README.zh-CN.md)
+Turn breaking news into explainable causal chains, scenario paths, cross-market impact maps, and replayable research workflows.
+
+**Try it now**
+
+- One-command demo: `./scripts/dev.sh`
+- Quick start: `npm install` → `npm run dev`
+- Jump to screenshots: [Global Overview](#global-overview) · [Event War Room](#event-war-room) · [Market Desk](#market-desk) · [Backtest Lab](#backtest-lab)
+- Project docs: [中文说明](./README.zh-CN.md) · [Highlights](./docs/PROJECT_HIGHLIGHTS.md) · [GitHub About Kit](./docs/GITHUB_ABOUT.md)
+
+## What You Get
+
+- Explainable event reasoning with stages, conditions, and invalidation signals
+- Multi-horizon scenario paths across 7 / 30 / 90 / 180 / 365-day windows
+- Cross-market translation into A-shares, US equities, commodities, and macro risk buckets
+- Local-first workflow from source intake to model output, analysis, replay, and validation
 
 ## Why HEM-CM
 

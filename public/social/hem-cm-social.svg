@@ -1,15 +1,21 @@
 <svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B1220"/>
+      <stop stop-color="#020617"/>
+      <stop offset="0.55" stop-color="#0B1220"/>
       <stop offset="1" stop-color="#111827"/>
     </linearGradient>
-    <linearGradient id="accent" x1="180" y1="520" x2="980" y2="160" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#22C55E" stop-opacity="0.2"/>
-      <stop offset="1" stop-color="#60A5FA" stop-opacity="0.22"/>
+    <linearGradient id="lineA" x1="84" y1="500" x2="1190" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22C55E" stop-opacity="0.12"/>
+      <stop offset="0.55" stop-color="#38BDF8" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0.12"/>
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="12" result="blur"/>
+    <linearGradient id="cardStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#475569" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#1E293B" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -17,27 +23,39 @@
     </filter>
   </defs>
 
-  <rect width="1280" height="640" rx="0" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <circle cx="1056" cy="144" r="180" fill="#38BDF8" fill-opacity="0.08"/>
+  <circle cx="184" cy="548" r="220" fill="#22C55E" fill-opacity="0.08"/>
 
-  <path d="M92 470 C 280 360, 420 520, 610 410 C 770 318, 940 420, 1188 260" stroke="url(#accent)" stroke-width="18" stroke-linecap="round" filter="url(#glow)"/>
-  <path d="M92 530 C 310 420, 520 600, 740 450 C 900 342, 1040 420, 1188 340" stroke="#22C55E" stroke-opacity="0.18" stroke-width="10" stroke-linecap="round"/>
+  <path d="M88 504C264 428 412 548 610 424C792 310 986 396 1192 210" stroke="url(#lineA)" stroke-width="22" stroke-linecap="round" filter="url(#softGlow)"/>
+  <path d="M88 556C296 480 480 590 708 466C880 372 1036 406 1192 326" stroke="#22C55E" stroke-opacity="0.18" stroke-width="10" stroke-linecap="round"/>
 
-  <g opacity="0.9">
-    <rect x="84" y="82" width="1112" height="476" rx="28" fill="#0B1220" fill-opacity="0.35" stroke="#334155" stroke-opacity="0.55"/>
-    <rect x="124" y="128" width="404" height="120" rx="18" fill="#0F172A" stroke="#334155" stroke-opacity="0.55"/>
-    <rect x="124" y="276" width="520" height="120" rx="18" fill="#0F172A" stroke="#334155" stroke-opacity="0.55"/>
-    <rect x="676" y="128" width="480" height="268" rx="18" fill="#0F172A" stroke="#334155" stroke-opacity="0.55"/>
-    <rect x="124" y="424" width="1032" height="90" rx="18" fill="#0F172A" stroke="#334155" stroke-opacity="0.55"/>
+  <g opacity="0.92">
+    <rect x="74" y="72" width="1132" height="496" rx="30" fill="#0B1220" fill-opacity="0.45" stroke="url(#cardStroke)"/>
+    <rect x="104" y="102" width="642" height="250" rx="24" fill="#09111F" fill-opacity="0.86" stroke="url(#cardStroke)"/>
+    <rect x="772" y="102" width="404" height="206" rx="24" fill="#09111F" fill-opacity="0.86" stroke="url(#cardStroke)"/>
+    <rect x="772" y="330" width="404" height="206" rx="24" fill="#09111F" fill-opacity="0.86" stroke="url(#cardStroke)"/>
+    <rect x="104" y="380" width="642" height="156" rx="24" fill="#09111F" fill-opacity="0.86" stroke="url(#cardStroke)"/>
   </g>
 
-  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" fill="#E5E7EB">
-    <text x="124" y="118" font-size="20" opacity="0.8">HEM-CM</text>
-    <text x="124" y="200" font-size="64" font-weight="700">Event Intelligence Terminal</text>
-    <text x="124" y="250" font-size="28" opacity="0.86">Causal Analysis · Scenario Forecasting · Market Mapping</text>
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" fill="#E2E8F0">
+    <text x="118" y="132" font-size="20" letter-spacing="4" opacity="0.72">HEM-CM · OPEN SOURCE</text>
+    <text x="118" y="204" font-size="66" font-weight="700">Breaking News → Scenarios → Market Impact</text>
+    <text x="118" y="254" font-size="30" opacity="0.9">Explainable event intelligence terminal for capital markets</text>
+    <text x="118" y="312" font-size="22" opacity="0.78">Causal chains · Multi-horizon paths · Cross-market mapping · Replay labs</text>
 
-    <text x="124" y="344" font-size="24" opacity="0.82">Turn breaking news into explainable causal chains and replayable research.</text>
+    <text x="118" y="420" font-size="20" opacity="0.64">WHAT IT SHIPS</text>
+    <text x="118" y="462" font-size="28">Global Overview · Event War Room · Market Desk · Backtest Lab</text>
+    <text x="118" y="504" font-size="20" opacity="0.78">Local-first workflow from source intake to validation</text>
 
-    <text x="124" y="488" font-size="18" opacity="0.65">Next.js · TypeScript · Prisma · SQLite</text>
-    <text x="950" y="488" font-size="18" opacity="0.65">Open Source</text>
+    <text x="798" y="142" font-size="18" opacity="0.64">EVENT PIPELINE</text>
+    <text x="798" y="190" font-size="26">Signal Intake</text>
+    <text x="798" y="226" font-size="26">Stage Detection</text>
+    <text x="798" y="262" font-size="26">Scenario Paths</text>
+
+    <text x="798" y="370" font-size="18" opacity="0.64">MARKET OUTPUT</text>
+    <text x="798" y="418" font-size="26">A-Shares · US Equities</text>
+    <text x="798" y="454" font-size="26">Commodities · Risk Appetite</text>
+    <text x="798" y="490" font-size="18" opacity="0.78">Next.js · TypeScript · Prisma · SQLite</text>
   </g>
 </svg>

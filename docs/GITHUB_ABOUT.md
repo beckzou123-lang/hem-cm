@@ -4,11 +4,11 @@
 
 ### Short description
 
-Open-source event intelligence terminal for causal analysis, scenario forecasting, and market mapping.
+Open-source event intelligence terminal for capital markets.
 
 ### Long description
 
-HEM-CM turns breaking news into explainable causal chains, stage-aware forecasts, cross-market impact maps, and replayable research workflows.
+HEM-CM turns breaking news into explainable causal chains, scenario paths, cross-market impact maps, and replayable research workflows.
 
 ## Recommended Topics
 
@@ -29,12 +29,12 @@ HEM-CM turns breaking news into explainable causal chains, stage-aware forecasts
 
 ### One-line pitch
 
-Build and inspect event-driven market narratives with transparent causal models, scenario paths, and replayable validation.
+From breaking news to explainable scenarios and cross-market impact, with replayable validation workflows.
 
 ### Two-line pitch
 
 HEM-CM is an open-source event intelligence terminal for researchers, PMs, and macro-oriented builders.  
-It combines causal modeling, market mapping, source intake, and backtest replay in one local product.
+It combines causal modeling, market mapping, source intake, and replayable backtests in one local-first product.
 
 ## Screenshot Order
 
@@ -46,7 +46,7 @@ It combines causal modeling, market mapping, source intake, and backtest replay 
 ## Social Preview Direction
 
 - Title: HEM-CM
-- Subtitle: Event Intelligence Terminal for Capital Markets
-- Key message: Causal Analysis · Scenario Forecasting · Market Mapping
-- Preferred visual base: dashboard screenshot with dark theme and high-density cards
-- Ready-to-upload asset: `public/social/hem-cm-social.svg`
+- Subtitle: Breaking News → Scenarios → Market Impact
+- Key message: Causal chains · Multi-horizon paths · Cross-market mapping · Replay labs
+- Preferred visual base: dark terminal aesthetic with dashboard cards and flow line accents
+- Ready-to-upload assets: `public/social/hem-cm-social.png` and `public/social/hem-cm-social.svg`
