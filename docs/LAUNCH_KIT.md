@@ -18,6 +18,42 @@ It combines event modeling, market translation, live-source intake, and backtest
 - Replayable, not just predictive
 - AI-ready, but already useful without remote model dependency
 
+## Patch Update – v1.0.1
+
+### Short Form
+
+HEM-CM v1.0.1 is live.
+
+This patch release focuses on dependency security and repository maintenance quality.
+
+Included in v1.0.1:
+
+- upgraded `prisma` to `^6.19.3`
+- upgraded `@prisma/client` to `^6.19.3`
+- closed the previously reported high-severity Dependabot alert
+- synced README and release note entry points for cleaner onboarding
+
+Release:
+https://github.com/beckzou123-lang/hem-cm/releases/tag/v1.0.1
+
+### Long Form
+
+HEM-CM v1.0.1 is now available as a patch release.
+
+This update does not add a new product surface. Instead, it strengthens the project as a maintained open-source repository by patching the Prisma dependency chain, closing the previously reported high-severity Dependabot alert, and syncing repository release documentation.
+
+Why this release matters:
+
+- the default branch is now on the patched dependency chain
+- release metadata and repository entry points are cleaner and easier to follow
+- the maintenance trail is now visible through GitHub Release notes, repository docs, and Discussions
+
+Repository:
+https://github.com/beckzou123-lang/hem-cm
+
+Release:
+https://github.com/beckzou123-lang/hem-cm/releases/tag/v1.0.1
+
 ## Launch Post – X / Short Form
 
 HEM-CM is now open source.
@@ -102,6 +138,7 @@ Feedback I want most:
 ## Launch Checklist
 
 - Publish tag and release
+- Publish a patch update note when maintenance releases ship
 - Pin the repository if desired
 - Share the GitHub link with the short-form post
 - Reuse the long-form post for LinkedIn or founder update
