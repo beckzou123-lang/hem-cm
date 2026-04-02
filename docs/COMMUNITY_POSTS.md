@@ -1,5 +1,40 @@
 # HEM-CM Community Posts
 
+## GitHub Discussion – v1.0.1 Release Update
+
+### Title
+
+HEM-CM v1.0.1 is live: security patch release and repository maintenance update
+
+### Body
+
+HEM-CM v1.0.1 is now live.
+
+This is a patch release focused on dependency security and repository maintenance quality rather than new product surface.
+
+What changed:
+
+- upgraded `prisma` to `^6.19.3`
+- upgraded `@prisma/client` to `^6.19.3`
+- resolved the transitive vulnerability path through `@prisma/config` and `effect`
+- re-verified `build`, `validate`, and `npm audit`
+- synced repository release notes and README release entry points to `v1.0.1`
+
+Why this matters:
+
+- the default branch is now on the patched Prisma dependency chain
+- the previously reported high-severity Dependabot alert has been closed
+- repository release metadata is now cleaner and easier to follow
+
+Release:
+https://github.com/beckzou123-lang/hem-cm/releases/tag/v1.0.1
+
+If you are following HEM-CM, the most useful feedback right now is:
+
+1. Which source adapters should be prioritized next
+2. Which model or replay workflow still feels unclear
+3. Which maintenance or onboarding gap is most worth fixing next
+
 ## GitHub Discussion – Welcome Post
 
 ### Title
@@ -89,6 +124,31 @@ I’m especially looking for feedback on:
 Repo:
 https://github.com/beckzou123-lang/hem-cm
 
+## Patch Release Post
+
+### Title
+
+HEM-CM v1.0.1: security patch release for the open-source event intelligence terminal
+
+### Body
+
+HEM-CM v1.0.1 is out.
+
+This patch does not add a new page or workflow. It focuses on dependency security and repository maintenance quality.
+
+Included in v1.0.1:
+
+- upgraded `prisma` to `^6.19.3`
+- upgraded `@prisma/client` to `^6.19.3`
+- closed the previously reported high-severity Dependabot alert
+- synced release notes and repository entry points for cleaner onboarding
+
+Repo:
+https://github.com/beckzou123-lang/hem-cm
+
+Release:
+https://github.com/beckzou123-lang/hem-cm/releases/tag/v1.0.1
+
 ## Reddit Post
 
 ### Title
@@ -156,3 +216,32 @@ HEM-CM 开源了：一款面向资本市场的事件智能研究终端
 
 项目地址：
 https://github.com/beckzou123-lang/hem-cm
+
+## 中文补丁发布文案
+
+### 标题
+
+HEM-CM v1.0.1 已发布：一次安全补丁与仓库维护更新
+
+### 正文
+
+HEM-CM 发布了 v1.0.1。
+
+这次不是功能大版本，而是一轮安全补丁和仓库维护更新，重点是把依赖链修到安全版本，并把 Release 与 README 入口整理得更完整。
+
+本次更新包括：
+
+- 升级 `prisma` 到 `^6.19.3`
+- 升级 `@prisma/client` 到 `^6.19.3`
+- 修复 `@prisma/config` / `effect` 这条传递依赖漏洞链
+- 重新验证 `build`、`validate`、`npm audit`
+- 同步仓库内 Release 文档与 README 入口
+
+Release：
+https://github.com/beckzou123-lang/hem-cm/releases/tag/v1.0.1
+
+如果你正在关注这个项目，我现在最想收集的反馈是：
+
+- 下一步最值得优先补的信源接入是什么
+- 哪个模型或回放验证环节还不够清晰
+- 哪类开源维护动作最值得优先加强
