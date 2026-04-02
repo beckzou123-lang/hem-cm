@@ -9,7 +9,7 @@
 - 一键演示：`./scripts/dev.sh`
 - 快速启动：`npm install` → `npm run dev`
 - 直达截图： [全局态势台](#全局态势台) · [事件作战室](#事件作战室) · [资本市场作战台](#资本市场作战台) · [回测实验室](#回测实验室)
-- 项目资料： [English README](./README.md) · [项目亮点](./docs/PROJECT_HIGHLIGHTS.zh-CN.md) · [系统架构](./docs/ARCHITECTURE.zh-CN.md) · [Adapter 指南](./docs/ADAPTER_GUIDE.zh-CN.md) · [模型指南](./docs/MODEL_GUIDE.zh-CN.md) · [仓库验收清单](./docs/REPO_CHECKLIST.zh-CN.md) · [维护者手册](./docs/MAINTAINER_PLAYBOOK.zh-CN.md) · [安全策略](./SECURITY.md) · [路线图](./ROADMAP.md) · [最新 Release](./docs/RELEASE_v1.0.1.md) · [宣传文案包](./docs/LAUNCH_KIT.zh-CN.md) · [社区投递文案](./docs/COMMUNITY_POSTS.md) · [GitHub 文案包](./docs/GITHUB_ABOUT.zh-CN.md)
+- 项目资料： [English README](./README.md) · [项目亮点](./docs/PROJECT_HIGHLIGHTS.zh-CN.md) · [系统架构](./docs/ARCHITECTURE.zh-CN.md) · [Adapter 指南](./docs/ADAPTER_GUIDE.zh-CN.md) · [模型指南](./docs/MODEL_GUIDE.zh-CN.md) · [仓库验收清单](./docs/REPO_CHECKLIST.zh-CN.md) · [维护者手册](./docs/MAINTAINER_PLAYBOOK.zh-CN.md) · [安全策略](./SECURITY.md) · [路线图](./ROADMAP.md) · [最新 Release](./docs/RELEASE_v1.0.1.md) · [宣传文案包](./docs/LAUNCH_KIT.zh-CN.md) · [社区投递文案](./docs/COMMUNITY_POSTS.zh-CN.md) · [GitHub 文案包](./docs/GITHUB_ABOUT.zh-CN.md)
 
 ## 你能获得什么
 
