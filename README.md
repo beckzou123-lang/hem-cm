@@ -8,12 +8,22 @@ Open-source event intelligence terminal for capital markets.
 
 Turn breaking news into explainable causal chains, scenario paths, cross-market impact maps, and replayable research workflows.
 
+![HEM-CM Global Overview](./assets/screenshots/README-global-overview.png)
+
+Three flagship real-case loops are already wired into the product: Middle East conflict escalation, tariff / trade-war escalation, and the Russia-Ukraine war trajectory.
+
+## Why People Star HEM-CM
+
+- It is a working product, not a dashboard shell or static concept repo.
+- It connects source intake, causal reasoning, scenario forecasting, market translation, and backtest replay in one loop.
+- It ships with real event cases and high-density screenshots that make the product value obvious in under a minute.
+- It is local-first, inspectable, and easy to extend for AI-assisted research workflows.
+
 **Try it now**
 
 - One-command demo: `./scripts/dev.sh`
 - Quick start: `npm install` → `npm run dev`
 - Jump to screenshots: [Global Overview](#global-overview) · [Event War Room](#event-war-room) · [Market Desk](#market-desk) · [Backtest Lab](#backtest-lab)
-- Project docs: [中文说明](./README.zh-CN.md) · [Highlights](./docs/PROJECT_HIGHLIGHTS.md) · [Architecture](./docs/ARCHITECTURE.md) · [Adapter Guide](./docs/ADAPTER_GUIDE.md) · [Model Guide](./docs/MODEL_GUIDE.md) · [Repo Checklist](./docs/REPO_CHECKLIST.md) · [Maintainer Playbook](./docs/MAINTAINER_PLAYBOOK.md) · [Security](./SECURITY.md) · [Roadmap](./ROADMAP.md) · [Release Notes](./docs/RELEASE_v1.0.1.md) · [Launch Kit](./docs/LAUNCH_KIT.md) · [Community Posts](./docs/COMMUNITY_POSTS.md) · [GitHub About Kit](./docs/GITHUB_ABOUT.md)
 
 ## What You Get
 
@@ -21,6 +31,12 @@ Turn breaking news into explainable causal chains, scenario paths, cross-market 
 - Multi-horizon scenario paths across 7 / 30 / 90 / 180 / 365-day windows
 - Cross-market translation into A-shares, US equities, commodities, and macro risk buckets
 - Local-first workflow from source intake to model output, analysis, replay, and validation
+
+## Built For
+
+- Investors and researchers who want more than a flat headline feed
+- Macro, policy, and cross-asset thinkers who need scenario paths instead of one-line takes
+- Builders who want an auditable event-intelligence codebase instead of a black-box demo
 
 ## Why HEM-CM
 
@@ -68,25 +84,39 @@ Most market dashboards stop at aggregation. HEM-CM goes further:
 
 Hot events, family risk heatmap, and the cross-market signal surface in one command center.
 
-![Global Overview](./assets/screenshots/01-dashboard.png)
+![Global Overview](./assets/screenshots/README-global-overview.png)
 
 ### Event War Room
 
 Inspect causal chains, scenario paths, actor responses, and event-specific market transmission.
 
-![Event War Room](./assets/screenshots/02-event-war-room.png)
+![Event War Room Overview](./assets/screenshots/README-event-war-room.png)
+
+Inspect the structured causal cards that turn one event into drivers, constraints, triggers, opponent responses, diffusion, and market transmission.
+
+![Event War Room Causal Chain](./assets/screenshots/README-event-war-room-02.png)
+
+See multi-horizon path forecasts and market impact mapping in the same research flow, without leaving the war room.
+
+![Event War Room Forecast And Impact](./assets/screenshots/README-event-war-room-03.png)
 
 ### Market Desk
 
 Translate one event into ranked winners, losers, priced-in moves, and risk-off transmission.
 
-![Market Desk](./assets/screenshots/03-markets.png)
+![Market Desk](./assets/screenshots/README-market-desk.png)
 
 ### Backtest Lab
 
 Replay model decisions against realized outcomes and inspect fit scores, error sources, and version deltas.
 
-![Backtest Lab](./assets/screenshots/04-backtests.png)
+![Backtest Lab](./assets/screenshots/README-backtest-lab.png)
+
+## Documentation
+
+- Product docs: [中文说明](./README.zh-CN.md) · [Highlights](./docs/PROJECT_HIGHLIGHTS.md) · [Architecture](./docs/ARCHITECTURE.md) · [Adapter Guide](./docs/ADAPTER_GUIDE.md) · [Model Guide](./docs/MODEL_GUIDE.md)
+- Open-source ops: [Repo Checklist](./docs/REPO_CHECKLIST.md) · [Maintainer Playbook](./docs/MAINTAINER_PLAYBOOK.md) · [Security](./SECURITY.md) · [Roadmap](./ROADMAP.md)
+- Launch materials: [Release Notes](./docs/RELEASE_v1.0.1.md) · [Launch Kit](./docs/LAUNCH_KIT.md) · [Community Posts](./docs/COMMUNITY_POSTS.md) · [GitHub About Kit](./docs/GITHUB_ABOUT.md)
 
 ## Model Design
 
