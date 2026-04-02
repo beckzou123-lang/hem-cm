@@ -1,6 +1,6 @@
 {
   "name": "hem-cm-system",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "HEM-CM is an open-source event intelligence terminal for causal analysis, scenario forecasting, and capital market mapping.",
   "license": "MIT",
