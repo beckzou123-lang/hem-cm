@@ -36,6 +36,7 @@
 
 - [x] SECURITY.md 已存在
 - [x] FUNDING.yml 已存在
+- [x] Dependabot 配置已存在
 - [x] 架构文档已存在
 - [x] Adapter 指南已存在
 - [x] 模型指南已存在
@@ -48,6 +49,9 @@
 - [x] FUNDING.yml 已在 GitHub 页面可见
 - [x] 中文架构文档已在 GitHub 页面可见
 - [x] GitHub 仓库设置中的私密漏洞上报已人工确认开启
+- [x] GitHub 仓库设置中的 Dependency Graph 已人工确认开启
+- [x] GitHub 仓库设置中的 Dependabot Alerts 已人工确认开启
+- [x] GitHub 仓库设置中的 Dependabot Security Updates 已人工确认开启
 - [ ] GitHub Sponsors 按钮已人工确认在仓库页展示
 
 ## 仍需人工确认的事项

@@ -36,6 +36,7 @@ This checklist is the final open-source release audit for HEM-CM. It is designed
 
 - [x] SECURITY.md exists
 - [x] FUNDING.yml exists
+- [x] Dependabot configuration exists
 - [x] Architecture guide exists
 - [x] Adapter guide exists
 - [x] Model guide exists
@@ -48,6 +49,9 @@ This checklist is the final open-source release audit for HEM-CM. It is designed
 - [x] FUNDING.yml is visible on GitHub
 - [x] Chinese architecture document is visible on GitHub
 - [x] Private vulnerability reporting has been manually confirmed in repository settings
+- [x] Dependency graph has been manually confirmed in repository settings
+- [x] Dependabot alerts have been manually confirmed in repository settings
+- [x] Dependabot security updates have been manually confirmed in repository settings
 - [ ] GitHub Sponsors button has been manually confirmed on the repository page
 
 ## Manual follow-up items

@@ -1,0 +1,55 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: Asia/Shanghai
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+    assignees:
+      - beckzou123-lang
+    commit-message:
+      prefix: deps
+    groups:
+      npm-production:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
+        exclude-patterns:
+          - next
+          - react
+          - react-dom
+          - prisma
+          - "@prisma/client"
+          - typescript
+      npm-dev:
+        dependency-type: development
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
+        exclude-patterns:
+          - typescript
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:30"
+      timezone: Asia/Shanghai
+    open-pull-requests-limit: 3
+    labels:
+      - ci
+      - dependencies
+    assignees:
+      - beckzou123-lang
+    commit-message:
+      prefix: ci
