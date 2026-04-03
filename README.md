@@ -12,6 +12,18 @@ Turn breaking news into explainable causal chains, scenario paths, cross-market 
 
 Three flagship real-case loops are already wired into the product: Middle East conflict escalation, tariff / trade-war escalation, and the Russia-Ukraine war trajectory.
 
+## 3-Minute First Win
+
+If you want to understand the product value in under three minutes, use this path:
+
+1. Run `./scripts/dev.sh`
+2. Open the Global Overview and inspect the top-ranked real-case event
+3. Enter the Event War Room to see the causal chain, stage, and path forecast
+4. Open Market Desk to inspect winners, losers, priced-in level, and expectation gap
+5. Open Backtest Lab to compare the forecast with realized outcomes
+
+This is the shortest path from repo landing page to "I see why this product is different."
+
 ## Why People Star HEM-CM
 
 - It is a working product, not a dashboard shell or static concept repo.
@@ -24,6 +36,16 @@ Three flagship real-case loops are already wired into the product: Middle East c
 - One-command demo: `./scripts/dev.sh`
 - Quick start: `npm install` → `npm run dev`
 - Jump to screenshots: [Global Overview](#global-overview) · [Event War Room](#event-war-room) · [Market Desk](#market-desk) · [Backtest Lab](#backtest-lab)
+
+## Why It Feels Different
+
+| Typical market-news dashboard | HEM-CM |
+| --- | --- |
+| Flattens headlines into a feed | Aggregates signals into explainable primary events |
+| Gives one-line summaries | Builds causal chains, stage labels, and actor logic |
+| Stops at "bullish / bearish" | Produces multi-horizon paths with conditions and invalidation signals |
+| Rarely closes the loop | Includes replay, fit score, and error analysis |
+| Looks like a concept demo | Ships as a local-first product with seeded real cases |
 
 ## What You Get
 
@@ -111,6 +133,23 @@ Translate one event into ranked winners, losers, priced-in moves, and risk-off t
 Replay model decisions against realized outcomes and inspect fit scores, error sources, and version deltas.
 
 ![Backtest Lab](./assets/screenshots/README-backtest-lab.png)
+
+## Flagship Event Loops
+
+- Middle East conflict escalation: causal chain, path forecast, oil / shipping / risk-off transmission
+- Tariff and trade-war escalation: policy conflict logic, inflation pressure, sector rotation, market mapping
+- Russia-Ukraine war trajectory: multi-horizon path comparison, energy transmission, replay and fit review
+
+These are not isolated screenshots. They are already wired into the seeded dataset, model flow, market mapping, and backtest experience.
+
+## Community Entry Points
+
+If you want to help this repo become the best open-source event-intelligence product in public:
+
+- Open a source-adapter request if there is a public feed you want connected
+- Open an event-case request if there is a geopolitical, policy, or corporate event family worth modeling
+- Open a model-feedback issue if a path forecast, market mapping, or replay explanation feels wrong
+- Pick up a scoped starter task from the issue tracker if you want to contribute directly
 
 ## Documentation
 
