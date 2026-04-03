@@ -1,12 +1,29 @@
 # HEM-CM
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
-[![CI](https://github.com/beckzou123-lang/hem-cm/actions/workflows/ci.yml/badge.svg)](https://github.com/beckzou123-lang/hem-cm/actions/workflows/ci.yml)
-[![Issues](https://img.shields.io/github/issues/beckzou123-lang/hem-cm)](https://github.com/beckzou123-lang/hem-cm/issues)
+<p align="center">
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
+  <a href="https://github.com/beckzou123-lang/hem-cm/actions/workflows/ci.yml"><img src="https://github.com/beckzou123-lang/hem-cm/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/beckzou123-lang/hem-cm/issues"><img src="https://img.shields.io/github/issues/beckzou123-lang/hem-cm" alt="Open issues"></a>
+</p>
 
-Open-source event intelligence terminal for capital markets.
+> Turn hot events into explainable market decision chains.
 
-Turn breaking news into explainable causal chains, scenario paths, cross-market impact maps, and replayable research workflows.
+Open-source event intelligence terminal for causal analysis, scenario forecasting, market mapping, and replayable validation workflows.
+
+**What makes this repo worth a star**
+
+- Real seeded event loops, not static mock screens
+- Explainable causal chains, not black-box outputs
+- Multi-horizon paths, market transmission, and replay in one product
+- Local-first setup that becomes visible in minutes
+
+**Best first click**
+
+- [3-minute first win](#3-minute-first-win)
+- [Global Overview](#global-overview)
+- [Event War Room](#event-war-room)
+- [Market Desk](#market-desk)
+- [Backtest Lab](#backtest-lab)
 
 ![HEM-CM Global Overview](./assets/screenshots/README-global-overview.png)
 

@@ -2,6 +2,15 @@
 
 ## About
 
+### Copy-paste setup
+
+- Description:
+  `Open-source event intelligence terminal for causal analysis, scenario forecasting, and market mapping.`
+- Website:
+  `https://github.com/beckzou123-lang/hem-cm/releases/latest`
+- Social preview image:
+  `public/social/hem-cm-social.png`
+
 ### Short description
 
 Open-source event intelligence terminal for causal analysis, scenario forecasting, and market mapping.
@@ -34,6 +43,10 @@ If there is no stable hosted product yet, the release page is the best current h
 - sqlite
 - ai-ready
 - open-source
+
+### Copy-paste topic line
+
+`event-intelligence, capital-markets, scenario-analysis, market-mapping, backtesting, causal-engine, nextjs, typescript, prisma, sqlite, ai-ready, open-source`
 
 ### Priority Topics for Discoverability
 
@@ -85,7 +98,20 @@ It combines causal modeling, market mapping, source intake, and replayable backt
 ## Social Preview Direction
 
 - Title: HEM-CM
-- Subtitle: Breaking News → Scenarios → Market Impact
-- Key message: Causal chains · Multi-horizon paths · Cross-market mapping · Replay labs
+- Subtitle: Breaking News → Causal Chains → Market Decisions
+- Key message: Real event loops · Multi-horizon paths · Cross-market mapping · Replay labs
 - Preferred visual base: dark terminal aesthetic with dashboard cards and flow line accents
 - Ready-to-upload assets: `public/social/hem-cm-social.png` and `public/social/hem-cm-social.svg`
+
+## Recommended Pinned Issue
+
+### Title
+
+Wanted: source adapters, flagship event cases, and mapping feedback
+
+### Body direction
+
+- Ask contributors which public feeds should be connected first
+- Ask which real event families should be modeled next
+- Ask where the current path forecast or market mapping feels least convincing
+- Link to beginner-scoped issues for contributors who want to help immediately

@@ -40,15 +40,16 @@
 
   <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" fill="#E2E8F0">
     <text x="118" y="132" font-size="20" letter-spacing="4" opacity="0.72">HEM-CM · OPEN SOURCE</text>
-    <text x="118" y="184" font-size="58" font-weight="700">Event Intelligence</text>
-    <text x="118" y="248" font-size="58" font-weight="700">for Capital Markets</text>
-    <text x="118" y="306" font-size="22" opacity="0.9">Turn breaking news into explainable scenarios and market impact.</text>
-    <text x="118" y="338" font-size="18" opacity="0.78">Causal chains · Multi-horizon paths · Cross-market mapping · Replay labs</text>
+    <text x="118" y="184" font-size="58" font-weight="700">Breaking News →</text>
+    <text x="118" y="248" font-size="58" font-weight="700">Causal Chains →</text>
+    <text x="118" y="312" font-size="58" font-weight="700">Market Decisions</text>
+    <text x="118" y="366" font-size="22" opacity="0.9">Explainable event intelligence for capital markets.</text>
+    <text x="118" y="398" font-size="18" opacity="0.78">Real event loops · Multi-horizon paths · Cross-market mapping · Replay labs</text>
 
-    <text x="118" y="420" font-size="20" opacity="0.64">WHAT IT SHIPS</text>
-    <text x="118" y="462" font-size="22">Global Overview · Event War Room</text>
-    <text x="118" y="496" font-size="22">Market Desk · Backtest Lab</text>
-    <text x="118" y="526" font-size="18" opacity="0.78">Local-first workflow from source intake to validation</text>
+    <text x="118" y="452" font-size="20" opacity="0.64">WHAT IT SHIPS</text>
+    <text x="118" y="494" font-size="22">Global Overview · Event War Room</text>
+    <text x="118" y="528" font-size="22">Market Desk · Backtest Lab</text>
+    <text x="118" y="558" font-size="18" opacity="0.78">Local-first workflow from source intake to replayable validation</text>
 
     <text x="828" y="142" font-size="18" opacity="0.64">EVENT PIPELINE</text>
     <text x="828" y="192" font-size="28">Signal Intake</text>
